@@ -3,20 +3,9 @@ package main
 import "fmt"
 
 func main() {
-
-	number := "260"
-	var value bool
-	var anotherNumber uint64
-
-	println(anotherNumber)
-
-	println("Hello World!", value)
-
-	fmt.Printf("%T", number)
-
+	var x string = fmt.Sprintf("Hello %T %v", 10,10)
+	println(x)
 	/**
-	0
-	Hello World! false
-	string
+	Hello int 10
 	 */
 }
