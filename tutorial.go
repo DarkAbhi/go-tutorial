@@ -4,16 +4,17 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 )
 
 func main() {
 	/**
-	Please type something: Hello Dude!
-	Typed = "Hello Dude!"
-	 */
+	Year you were born? 2000
+	You are 21 years old
+	*/
 	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Printf("Please type something: ")
+	fmt.Printf("Year you were born? ")
 	scanner.Scan()
-	input := scanner.Text()
-	fmt.Printf("Typed = %q", input)
+	input, _ := strconv.ParseInt(scanner.Text(), 10, 64)
+	fmt.Printf("You are %d years old", 2021-input)
 }
