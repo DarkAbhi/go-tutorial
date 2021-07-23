@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-	x := 'A'
-	val := x<'b'
+	val := 9<7 || !(4>7)
 	fmt.Printf("%t", val)
 }
