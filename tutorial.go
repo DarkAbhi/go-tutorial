@@ -1,20 +1,18 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strconv"
 )
 
 func main() {
-	/**
-	Year you were born? 2000
-	You are 21 years old
+	/*
+	Answer = 24
+	Answer = -8
 	*/
-	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Printf("Year you were born? ")
-	scanner.Scan()
-	input, _ := strconv.ParseInt(scanner.Text(), 10, 64)
-	fmt.Printf("You are %d years old", 2021-input)
+	var num1 int = 28
+	var num2 int = 8
+	/*Answer = -8.000000*/
+	//answer:= num1 - float64(num2)
+	answer2:= num1%num2
+	fmt.Printf("Answer = %d", answer2)
 }
